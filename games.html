@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlayXtreme - Best Free Online Games to Play Instantly</title>
+  <meta name="description" content="PlayXtreme offers a curated selection of free online games. Enjoy instant play without downloads on mobile or PC, featuring arcade, puzzle, and more.">
+  <meta name="keywords" content="free online games, play games online, no download games, mobile games, PC games, arcade games, puzzle games">
+  <link rel="icon" href="InShot_20250408_213508444.jpg" type="image/jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #ffffff, #a66cff);
+      color: #000;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    .logo {
+      width: 120px;
+      margin: 20px auto 10px;
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #0047ab;
+      text-shadow: 2px 2px 6px #ccc;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .search-container {
+      max-width: 500px;
+      margin: 0 auto 30px;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1rem;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      background: #d6c9ff;
+      color: #333;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .game-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .game-btn {
+      background: linear-gradient(145deg, #c4d4f7, #e8e8ff);
+      border: 2px solid #0047ab;
+      color: #0047ab;
+      padding: 15px 25px;
+      font-size: 1.3em;
+      border-radius: 20px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      width: 90%;
+      max-width: 320px;
+    }
+
+    .game-btn:hover {
+      background: #0047ab;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .game-description {
+      font-size: 0.85rem;
+      color: #333;
+      margin: 4px 0 20px 0;
+      max-width: 320px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #0047ab;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <img src="InShot_20250408_213508444.jpg" alt="PlayXtreme Logo" class="logo">
+  <h1>Best Free Online Games to Play Instantly</h1>
+  <p class="intro">Explore a curated collection of free online games at PlayXtreme. Enjoy instant play without downloads on both mobile and PC platforms, featuring arcade, puzzle, and more.</p>
+
+  <div class="search-container">
+    <input type="text" placeholder="Search a game platform..." id="searchInput" onkeyup="filterGames()">
+  </div>
+
+  <div class="game-buttons" id="gameList">
+    <a href="https://www.crazygames.com/" class="game-btn" target="_blank">CrazyGames</a>
+    <p class="game-description">PC & Mobile | Instant play, no download</p>
+
+    <a href="https://poki.com/" class="game-btn" target="_blank">Poki</a>
+    <p class="game-description">Mobile optimized | Fast loading, wide variety</p>
+
+    <a href="https://playhop.com/" class="game-btn" target="_blank">PlayHop</a>
+    <p class="game-description">Mobile only | Simple and casual games</p>
+
+    <a href="https://www.1001games.com/" class="game-btn" target="_blank">1001 Games</a>
+    <p class="game-description">PC & Mobile | Classic games sorted by type</p>
+
+    <a href="https://1000webgames.com/" class="game-btn" target="_blank">1000 WebGames</a>
+    <p class="game-description">PC only | Retro-style flash games</p>
+
+    <a href="https://wellgames.com/" class="game-btn" target="_blank">WellGames</a>
+    <p class="game-description">PC only | Puzzle & multiplayer games</p>
+
+    <a href="https://arcadespot.com/" class="game-btn" target="_blank">ArcadeSpot</a>
+    <p class="game-description">PC & Mobile | Arcade and retro remakes</p>
+
+    <a href="https://www.a10.com/game/vex-x3m-2" class="game-btn" target="_blank">A10</a>
+    <p class="game-description">PC only | Action, logic & platformers</p>
+
+    <a href="https://www.y8.com/" class="game-btn" target="_blank">Y8</a>
+    <p class="game-description">PC only | Multiplayer & 2-player games</p>
+
+    <a href="https://www.addictinggames.com/" class="game-btn" target="_blank">AddictingGames</a>
+    <p class="game-description">PC only | Weird & funny game collection</p>
+
+    <a href="https://miniclip.com/games/web" class="game-btn" target="_blank">Miniclip</a>
+    <p class="game-description">Mobile & PC | Sports and quick games</p>
+
+    <a href="https://www.kiwigames.io/" class="game-btn" target="_blank">Kiwigames</a>
+    <p class="game-description">Mobile only | Hyper casual games</p>
+
+    <a href="https://www.kingdomofloathing.com/login.php?loginid=31f848ea14934a8db01078c6289493bd" class="game-btn" target="_blank">Kingdom Of Loathing</a>
+    <p class="game-description">PC only | Text-based RPG adventure</p>
+
+    <a href="https://www.coolmathgames.com/" class="game-btn" target="_blank">CoolMathGames</a>
+    <p class="game-description">PC & Mobile | Logic & math-based fun</p>
+
+    <a href="https://gamesnacks.com/games/1e2ocejsf0rm8#sc=1744638929244112297-2417477" class="game-btn" target="_blank">GameSnacks</a>
+    <p class="game-description">Mobile only | Super fast-loading games</p>
+
+    <a href="https://www.kongregate.com/" class="game-btn" target="_blank">Kongregate</a>
+    <p class="game-description">PC only | Flash & unity games (login needed)</p>
+  </div>
+
+  <footer>© 2025 PlayXtreme. All rights reserved.</footer>
+
+  <script>
+    function filterGames() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const buttons = document.querySelectorAll('.game-buttons a');
+      const descriptions = document.querySelectorAll('.game-description');
+
+      buttons.forEach((btn, i) => {
+        const text = btn.textContent.toLowerCase();
+        if (text.includes(input)) {
+          btn.style.display = "inline-block";
+          descriptions[i].style.display = "block";
+        } else {
+          btn.style.display = "none";
+          descriptions[i].style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
