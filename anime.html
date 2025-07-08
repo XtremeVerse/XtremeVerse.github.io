@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XtremeVerse – Anime Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom right, #0d001a, #6e00a8);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 25px 10px 15px;
+      background-color: #1b003b;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 2.4em;
+      color: #e0caff;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: #ccc;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .search-container {
+      margin: 25px auto;
+      max-width: 500px;
+      padding: 0 20px;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1rem;
+      border-radius: 30px;
+      border: none;
+      background: #2a004d;
+      color: #fff;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e0033;
+      border: 1px solid #9e4bff;
+      border-radius: 14px;
+      width: 240px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(158, 75, 255, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(200, 100, 255, 0.6);
+    }
+
+    .card h3 {
+      color: white;
+      margin: 10px 0 6px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: #ccc;
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #9e4bff;
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background: #b76aff;
+    }
+
+    .back-link {
+      display: block;
+      margin: 10px auto 20px;
+      color: #bbb;
+      font-size: 0.9rem;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #1a0033;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>XtremeVerse</h1>
+    <p class="tagline">Anime Hub – Top Streaming Sites</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search anime platforms..." oninput="filterCards()" />
+  </div>
+
+  <div class="grid" id="cardGrid">
+    <div class="card">
+      <h3>HiAnime</h3>
+      <p>Stream latest anime episodes for free</p>
+      <a href="https://hianime.to/" target="_blank">Visit</a>
+    </div>
+
+    <div class="card">
+      <h3>Zenime</h3>
+      <p>Ad-free clean UI with movie filters</p>
+      <a href="https://zenime.site/Movie" target="_blank">Visit</a>
+    </div>
+
+    <div class="card">
+      <h3>AnimeFlix</h3>
+      <p>Watch HD anime with minimal ads</p>
+      <a href="https://animeflix.ltd/" target="_blank">Visit</a>
+    </div>
+
+    <div class="card">
+      <h3>Crunchyroll</h3>
+      <p>Official & legal platform, free with ads</p>
+      <a href="https://crunchyroll.com/" target="_blank">Visit</a>
+    </div>
+
+    <div class="card">
+      <h3>Tubi TV</h3>
+      <p>Free anime movies and shows with ads</p>
+      <a href="https://tubitv.com/" target="_blank">Visit</a>
+    </div>
+
+    <div class="card">
+      <h3>RetroCrush</h3>
+      <p>Watch classic anime series free</p>
+      <a href="https://www.retrocrush.tv/" target="_blank">Visit</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+  <footer>
+    <p>&copy; 2025 XtremeVerse Anime Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function filterCards() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
+
