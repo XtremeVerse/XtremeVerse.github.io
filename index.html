@@ -109,10 +109,41 @@ footer {
   background: #1a0033;
 }
 
+.logo-container {
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glow-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #a66cff, 0 0 45px #a66cff;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px #a66cff, 0 0 40px #a66cff;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 35px #d0a2ff, 0 0 70px #d0a2ff;
+    transform: scale(1.05);
+  }
+}
+
+
+
   </style>
 </head>
 <body>
   <header>
+<div class="logo-container">
+  <img src="verse.png" alt="XtremeVerse Logo" class="glow-logo" />
+</div>
     <h1>XtremeVerse</h1>
     <p class="tagline">Your gateway to top Anime, Games & Movie sites</p>
   </header>  <div class="search-container">
