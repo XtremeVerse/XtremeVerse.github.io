@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xtremeverse.github.io/sitemap.xml
