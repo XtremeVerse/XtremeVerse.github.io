@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Velo Design System - Neon & Glass Theme */
+@layer base {
+  :root {
+    /* Velo Brand Colors */
+    --velo-bg: 221 48% 7%;           /* #0b1221 - Deep space blue */
+    --velo-panel: 220 35% 11%;       /* #0f1720 - Panel background */
+    --velo-neon: 189 100% 47%;       /* #00eeff - Signature cyan */
+    --velo-purple: 261 73% 65%;      /* #7c6cff - Accent purple */
+    --velo-glass: 0 0% 100% / 0.03;  /* Glass effect overlay */
+    --velo-muted: 218 12% 65%;       /* #9aa3b2 - Muted text */
+    
+    /* Semantic Design Tokens */
+    --background: var(--velo-bg);
+    --foreground: 0 0% 100%;
+    --card: var(--velo-panel);
+    --card-foreground: 0 0% 100%;
+    --popover: var(--velo-panel);
+    --popover-foreground: 0 0% 100%;
+    --primary: var(--velo-neon);
+    --primary-foreground: 221 48% 7%;
+    --secondary: var(--velo-purple);
+    --secondary-foreground: 0 0% 100%;
+    --muted: var(--velo-panel);
+    --muted-foreground: var(--velo-muted);
+    --accent: var(--velo-neon);
+    --accent-foreground: 221 48% 7%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 100% / 0.1;
+    --input: 0 0% 100% / 0.05;
+    --ring: var(--velo-neon);
+    --radius: 0.75rem;
+
+    /* Velo Effects */
+    --neon-glow: 0 0 10px hsl(var(--velo-neon)), 0 0 20px hsl(var(--velo-neon)), 0 0 40px hsl(var(--velo-neon));
+    --purple-glow: 0 0 15px hsl(var(--velo-purple)), 0 0 30px hsl(var(--velo-purple));
+    --glass-bg: linear-gradient(180deg, hsl(var(--velo-glass)), hsl(0 0% 100% / 0.01));
+    --glass-border: 1px solid hsl(0 0% 100% / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Velo Glass Card */
+  .velo-glass {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* Velo Neon Text */
+  .velo-neon-text {
+    color: transparent;
+    -webkit-text-stroke: 1px hsl(var(--velo-neon));
+    background-image: linear-gradient(hsl(var(--velo-neon)), hsl(var(--velo-neon)));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -600px 0;
+  }
+
+  .velo-neon-active {
+    background-position: 0 0;
+    text-shadow: var(--neon-glow);
+  }
+
+  /* Velo Button Variants */
+  .velo-btn-neon {
+    @apply relative overflow-hidden bg-transparent border-2 border-primary/20 text-primary px-6 py-3 font-semibold transition-all duration-300;
+  }
+  
+  .velo-btn-neon:hover {
+    @apply border-primary text-primary;
+    box-shadow: var(--neon-glow);
+  }
+
+  .velo-btn-hero {
+    @apply relative overflow-hidden bg-background/10 border border-foreground/20 text-foreground px-8 py-4 font-semibold transition-all duration-300;
+  }
+
+  .velo-btn-hero:hover {
+    @apply bg-foreground/20;
+  }
+
+  /* Animated Background Nodes */
+  .velo-nodes-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
