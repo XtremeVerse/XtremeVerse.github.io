@@ -1,149 +1,340 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PlayXtreme – Anime Sites</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #000000, #4b0082);
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+<meta name="msvalidate.01" content="FC152C153D45C28516EDE1098E1F44FC" />  
+<meta name="yandex-verification" content="206bef5cb6d22f36" />  
+  <meta name="google-site-verification" content="aj5ktoiPTO7eexwMKBWZVRNny4EiXwrJ3cXX-ZTNIzs" />  
+<!-- Google tag (gtag.js) -->  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KDES0JWRK1"></script>  
+<script>  
+  window.dataLayer = window.dataLayer || [];  
+  function gtag(){dataLayer.push(arguments);}  
+  gtag('js', new Date());  
+  gtag('config', 'G-KDES0JWRK1');  
+</script>  
+  <title>XtremeVerse - Free Anime, Games & Movies Links</title>  
+  <meta name="description" content="XtremeVerse lets you instantly access top free anime, gaming, and movie websites. No downloads, no signups, just click and enjoy.">  
+  <meta name="keywords" content="anime sites, free anime, play games online, watch movies free, game sites, anime download, stream anime, retro games, casual games, free movies online">  
+  <meta name="robots" content="index, follow">  
+<!-- Open Graph (OG) Tags for Social Sharing -->  
+<meta property="og:title" content="XtremeVerse - Watch Anime, Play Games, Stream Movies Free">  
+<meta property="og:description" content="Explore top anime streaming sites, online browser games & free movie websites — all in one place.">  
+<meta property="og:image" content="https://xtremeverse.github.io/verse.png"> <!-- Change if you upload a new image -->  
+<meta property="og:url" content="https://xtremeverse.github.io/">  
+<meta property="og:type" content="website">  <!-- Twitter Card Tags (optional) -->  <meta name="twitter:card" content="summary_large_image">  
+<meta name="twitter:title" content="XtremeVerse - All-in-One Entertainment Portal">  
+<meta name="twitter:description" content="No ads. No logins. Just anime, games, movies. Free & fast!">  
+<meta name="twitter:image" content="https://xtremeverse.github.io/verse.png">  
+  <link rel="canonical" href="https://XtremeVerse.github.io/" />    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">    <!-- Keep your <style> or CSS link below this -->    <title>XtremeVerse - Explore Anime, Games & More</title>  
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">  
+  <style>  
+    body {  
+      margin: 0;  
+      font-family: 'Orbitron', sans-serif;  
+      background: linear-gradient(to bottom right, #000000, #6e00a8);  
+      color: #fff;  
+      text-align: center;  
+    }  header {  
+  padding: 30px 10px 10px;  
+  background-color: #1b003b;  
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);  
+}  
 
-    h1 {
-      font-size: 2.3rem;
-      margin-bottom: 10px;
-      color: #ffffff;
-      text-shadow: 2px 2px 10px #000;
-    }
+h1 {  
+  font-size: 2.8em;  
+  color: #e0caff;  
+  margin-bottom: 5px;  
+}  
 
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 40px;
-      color: #cc99ff;
-      border-bottom: 2px solid #4b0082;
-      display: inline-block;
-      padding-bottom: 6px;
-    }
+.tagline {  
+  font-size: 1rem;  
+  color: #ccc;  
+  font-style: italic;  
+}  
 
-    .link-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-      margin-top: 15px;
-    }
+.search-container {  
+  margin: 20px auto;  
+  max-width: 500px;  
+  padding: 0 20px;  
+}  
 
-    .link-box {
-      background: linear-gradient(145deg, #1a1a2e, #2c0059);
-      padding: 16px 22px;
-      border-radius: 15px;
-      width: 90%;
-      max-width: 600px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-      transition: 0.3s ease;
-    }
+.search-container input {  
+  width: 90%;  
+  max-width: 400px;  
+  padding: 10px 14px;  
+  font-size: 0.95rem;  
+  border-radius: 20px;  
+  background: #1a0033;  
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);  
+  border: none;  
+  color: white;  
+}  
 
-    .link-box:hover {
-      transform: scale(1.02);
-      background: #3f2b7f;
-    }
+.scroll-wrapper {  
+  display: flex;  
+  overflow-x: auto;  
+  gap: 20px;  
+  padding: 20px;  
+  margin-top: 10px;  
+  scrollbar-width: none;  
+  -ms-overflow-style: none;  
+}  
 
-    .link-box a {
-      color: #ffccff;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1.05rem;
-      word-break: break-word;
-    }
+.scroll-wrapper::-webkit-scrollbar {  
+  display: none;  
+}  
 
-    .link-box p {
-      font-size: 0.85rem;
-      color: #ddddff;
-      margin-top: 6px;
-    }
+.scroll-card {  
+  flex: 0 0 auto;  
+  text-align: center;  
+  border-radius: 50%;  
+  transition: transform 0.4s;  
+}  
 
-    footer {
-      margin-top: 50px;
-      font-size: 0.85rem;
-      color: #999;
-    }
-  </style>
-</head>
-<body>
-  <h1>PlayXtreme – Top Anime Sites</h1>
+.scroll-card img {  
+  width: 120px;  
+  height: 120px;  
+  border-radius: 50%;  
+  object-fit: cover;  
+  border: 4px solid white;  
+}  
 
-  <h2>✅ Legal Platforms</h2>
-  <div class="link-list">
-    <div class="link-box">
-      <a href="https://www.crunchyroll.com/" target="_blank">Crunchyroll</a>
-      <p>Official anime – Free with ads</p>
-    </div>
-    <div class="link-box">
-      <a href="https://www.tubitv.com/" target="_blank">Tubi TV</a>
-      <p>Free anime & movies – With ads</p>
-    </div>
-    <div class="link-box">
-      <a href="https://pluto.tv/" target="_blank">Pluto TV</a>
-      <p>Live anime channels + retro</p>
-    </div>
-    <div class="link-box">
-      <a href="https://www.retrocrush.tv/" target="_blank">RetroCrush</a>
-      <p>Classic anime for free</p>
-    </div>
-    <div class="link-box">
-      <a href="https://animeflix.ltd/" target="_blank">AnimeFlix</a>
-      <p>Modern UI, direct watch</p>
-    </div>
-  </div>
+.scroll-card p {  
+  margin-top: 10px;  
+  font-size: 1rem;  
+  font-weight: bold;  
+  color: #fff;  
+}  
 
-  <h2>🔥 Best (No Ads)</h2>
-  <div class="link-list">
-    <div class="link-box">
-      <a href="https://zenime.site/" target="_blank">Zenime</a>
-      <p>Fast, clean & ad-free anime site</p>
-    </div>
-  </div>
+.scroll-card:hover {  
+  transform: scale(1.1);  
+}  
 
-  <h2>📡 HiAnime Source</h2>
-  <div class="link-list">
-    <div class="link-box">
-      <a href="https://hianime.nz/" target="_blank">HiAnime.nz</a>
-      <p>Mirror source for HiAnime network</p>
-    </div>
-  </div>
+.neon-red img {  
+  box-shadow: 0 0 15px red, 0 0 40px red;  
+}  
 
-  <h2>▶️ HiAnime Mirrors</h2>
-  <div class="link-list">
-    <div class="link-box"><a href="https://hianime.to/" target="_blank">HiAnime.to</a></div>
-    <div class="link-box"><a href="https://hianime.bz/" target="_blank">HiAnime.bz</a></div>
-    <div class="link-box"><a href="https://hianime.pe/" target="_blank">HiAnime.pe</a></div>
-    <div class="link-box"><a href="https://hianime.cx/" target="_blank">HiAnime.cx</a></div>
-    <div class="link-box"><a href="https://hianime.gs/" target="_blank">HiAnime.gs</a></div>
-  </div>
+.neon-violet img {  
+  box-shadow: 0 0 15px violet, 0 0 40px violet;  
+}  
 
-  <h2>🌐 Other Anime Sites</h2>
-  <div class="link-list">
-    <div class="link-box">
-      <a href="https://kissanime.cfd/" target="_blank">KissAnime (Clone)</a>
-      <p>Reliable clone – Watch in HD</p>
-    </div>
-    <div class="link-box">
-      <a href="https://aniwatchtv.to/search?keyword=The%20Fragrant%20Flower%20Blooms%20with%20Dignity" target="_blank">AniwatchTV</a>
-      <p>Search result for a trending anime</p>
-    </div>
-    <div class="link-box">
-      <a href="https://9anime.org.lv/" target="_blank">9anime Mirror</a>
-      <p>Stream anime in HD</p>
-    </div>
-  </div>
+.neon-pink img {  
+  box-shadow: 0 0 15px deeppink, 0 0 40px deeppink;  
+}  
 
-  <footer>
-    © 2025 PlayXtreme Anime Hub. Designed for discovery & learning.
-  </footer>
-</body>
-</html>
+.logo-container {  
+  margin: 20px auto 10px;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}  
+
+.glow-logo {  
+  width: 130px;  
+  height: 130px;  
+  border-radius: 50%;  
+  box-shadow: 0 0 25px #a66cff, 0 0 45px #a66cff;  
+  animation: pulseGlow 3s infinite ease-in-out;  
+}
+
+.search-container {
+position: relative;
+}
+
+.search-container input {
+padding-left: 36px;
+}
+
+.search-container::before {
+content: "🔍";
+position: absolute;
+left: 30px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 1rem;
+opacity: 0.6;
+}
+
+@keyframes pulseGlow {  
+  0%, 100% {  
+    box-shadow: 0 0 20px #a66cff, 0 0 40px #a66cff;  
+    transform: scale(1);  
+  }  
+  50% {  
+    box-shadow: 0 0 35px #d0a2ff, 0 0 70px #d0a2ff;  
+    transform: scale(1.05);  
+  }  
+}  
+
+#search-results {  
+  padding: 30px 20px;  
+  display: none;  
+}  
+
+#search-results h2 {  
+  color: #e0caff;  
+  margin-bottom: 20px;  
+}  
+
+#result-list {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 15px;  
+  text-align: left;  
+  max-width: 600px;  
+  margin: 0 auto;  
+}  
+
+.result-item a {  
+  color: #ffd700;  
+  font-weight: bold;  
+  text-decoration: none;  
+  font-size: 1.05rem;  
+}  
+
+.result-item p {  
+  margin: 5px 0 0;  
+  color: #ccc;  
+  font-size: 0.85rem;  
+}  
+
+footer {  
+  margin-top: 40px;  
+  padding: 15px;  
+  font-size: 0.9em;  
+  color: #aaa;  
+  background: #1a0033;  
+}
+
+  </style>  
+</head>  <body>    <header>  
+    <div class="logo-container">  
+      <img src="anime.png" alt="XtremeVerse Logo" class="glow-logo" loading="lazy" />  
+    </div>  
+    <h1>XtremeVerse</h1>  
+    <p class="tagline">Your gateway to top Anime, Games & Movie sites</p>  
+  </header>    <div class="search-container">  
+    <input type="text" id="searchBox" placeholder="Search anime, games, movies..." />  
+  </div>    <div class="scroll-wrapper">  
+    <a href="anime.html" class="scroll-card neon-red">  
+      <img src="https://e1.pxfuel.com/desktop-wallpaper/495/188/desktop-wallpaper-kimetsu-no-yaiba-anime-anime-boys-kamado-tanjir%C5%8D-demon-slayer-boy.jpg" alt="Anime" loading="lazy">  
+      <p>Anime</p>  
+    </a>  
+    <a href="games.html" class="scroll-card neon-violet">  
+      <img src="https://cdn.mos.cms.futurecdn.net/9xBT864XC3j5wcZRPgQapa-970-80.png.webp" alt="Games" loading="lazy">  
+      <p>Games</p>  
+    </a>  
+    <a href="movies.html" class="scroll-card neon-pink">  
+      <img src="https://media.gettyimages.com/id/1469392485/video/4k-glowing-pink-neon-text-coming-soon.avif?s=640x640&k=20&c=r9XiBH4bfLjF5p8AEFiH_tDj0gVXEzNe_AH47emZIwg=" alt="Coming Soon" loading="lazy">  
+      <p>Coming Soon</p>  
+    </a>  
+  </div>    <!-- Search Results Section -->    <div id="search-results">  
+    <h2>🔍 Search Results</h2>  
+    <div id="result-list"></div>  
+  </div>    <!-- 🌐 Explore All Sites (with your full list unchanged) -->    <section id="all-sites" style="padding: 30px 20px;">  
+    <h2 style="color:#e0caff; margin-bottom: 20px;">🌐 Explore All Sites</h2>  
+    <div style="max-width:600px; margin:0 auto; text-align:left;">  
+      <ul style="list-style:none; padding:0; font-size:1rem; line-height:2;">  
+        <!-- ✅ Keep your FULL link list here (unchanged) -->  
+        <li><a href="https://hianime.to/" target="_blank" style="color:#ffd700;">HiAnime</a> – Stream anime episodes</li>  
+        <li><a href="https://zenime.site/Movie" target="_blank" style="color:#ffd700;">Zenime</a> – Ad-free clean UI</li>  
+        <li><a href="https://animeflix.ltd/" target="_blank" style="color:#ffd700;">AnimeFlix</a> – HD anime with fewer ads</li>  
+        <li><a href="https://crunchyroll.com/" target="_blank" style="color:#ffd700;">Crunchyroll</a> – Official anime platform</li>  
+        <li><a href="https://tubitv.com/" target="_blank" style="color:#ffd700;">Tubi TV</a> – Anime & movie content</li>  
+        <li><a href="https://www.retrocrush.tv/" target="_blank" style="color:#ffd700;">RetroCrush</a> – Classic anime streaming</li>  
+        <li><a href="https://www.crazygames.com/" target="_blank" style="color:#ffd700;">CrazyGames</a> – Instant play, no download</li>  
+        <li><a href="https://poki.com/" target="_blank" style="color:#ffd700;">Poki</a> – Fast casual mobile & PC games</li>  
+        <li><a href="https://playhop.com/" target="_blank" style="color:#ffd700;">PlayHop</a> – Casual mobile games</li>  
+        <li><a href="https://www.1001games.com/" target="_blank" style="color:#ffd700;">1001 Games</a> – Classic genre-sorted titles</li>  
+        <li><a href="https://1000webgames.com/" target="_blank" style="color:#ffd700;">1000 WebGames</a> – Retro Flash games</li>  
+        <li><a href="https://wellgames.com/" target="_blank" style="color:#ffd700;">WellGames</a> – Puzzle & multiplayer</li>  
+        <li><a href="https://arcadespot.com/" target="_blank" style="color:#ffd700;">ArcadeSpot</a> – Arcade & retro games</li>  
+        <li><a href="https://www.a10.com/game/vex-x3m-2" target="_blank" style="color:#ffd700;">A10 Games</a> – Action & logic based games</li>  
+        <li><a href="https://www.y8.com/" target="_blank" style="color:#ffd700;">Y8</a> – Multiplayer and 2-player games</li>  
+        <li><a href="https://www.addictinggames.com/" target="_blank" style="color:#ffd700;">AddictingGames</a> – Weird and fun games</li>  
+        <li><a href="https://miniclip.com/games/web" target="_blank" style="color:#ffd700;">Miniclip</a> – Sports and mini-games</li>  
+        <li><a href="https://www.kiwigames.io/" target="_blank" style="color:#ffd700;">Kiwigames</a> – Hyper casual mobile games</li>  
+        <li><a href="https://www.kingdomofloathing.com/" target="_blank" style="color:#ffd700;">Kingdom Of Loathing</a> – Text-based RPG</li>  
+        <li><a href="https://www.coolmathgames.com/" target="_blank" style="color:#ffd700;">CoolMathGames</a> – Logic & math fun</li>  
+        <li><a href="https://gamesnacks.com/" target="_blank" style="color:#ffd700;">GameSnacks</a> – Super fast-loading games</li>  
+        <li><a href="https://www.kongregate.com/" target="_blank" style="color:#ffd700;">Kongregate</a> – Flash & Unity (needs login)</li>  
+        <li><a href="https://pluto.tv/" target="_blank" style="color:#ffd700;">Pluto TV</a> – Live TV & movies (free)</li>  
+        <li><a href="https://tubitv.com/" target="_blank" style="color:#ffd700;">Tubi Movies</a> – Stream movies legally</li>  
+        <li><a href="#" style="color:#ffd700;">WatchSeries</a> – (Coming soon...)</li>  
+      </ul>  
+    </div>  
+  </section>    <footer>  
+    <p>&copy; 2025 XtremeVerse. All rights reserved.</p>  
+    <p>Listed at   
+      <a href="https://www.ewebdiscussion.com/forums/web-hosting-offers.67/" target="_blank" style="color: #ffd700;">Web Hosting Offers</a>  
+    </p>  
+  </footer>    <!-- Keep your JS untouched -->  <script>  
+  const sites = [  
+    // Anime  
+    { name: "HiAnime", url: "https://hianime.to/", description: "Stream latest anime episodes for free" },  
+    { name: "Zenime", url: "https://zenime.site/Movie", description: "Ad-free clean UI with movie filters" },  
+    { name: "AnimeFlix", url: "https://animeflix.ltd/", description: "Watch HD anime with minimal ads" },  
+    { name: "Crunchyroll", url: "https://crunchyroll.com/", description: "Official & legal platform, free with ads" },  
+    { name: "Tubi TV", url: "https://tubitv.com/", description: "Free anime movies and shows with ads" },  
+    { name: "RetroCrush", url: "https://www.retrocrush.tv/", description: "Watch classic anime series free" },  
+  
+    // Games  
+    { name: "CrazyGames", url: "https://www.crazygames.com/", description: "Instant play, no download needed" },  
+    { name: "Poki", url: "https://poki.com/", description: "Fast loading casual games" },  
+    { name: "PlayHop", url: "https://playhop.com/", description: "Mobile casual games" },  
+    { name: "1001 Games", url: "https://www.1001games.com/", description: "Classic genre-sorted games" },  
+    { name: "1000 WebGames", url: "https://1000webgames.com/", description: "Retro Flash games" },  
+    { name: "WellGames", url: "https://wellgames.com/", description: "Puzzle and multiplayer games" },  
+    { name: "ArcadeSpot", url: "https://arcadespot.com/", description: "Retro arcade games" },  
+    { name: "A10 Games", url: "https://www.a10.com/game/vex-x3m-2", description: "Action & logic games" },  
+    { name: "Y8", url: "https://www.y8.com/", description: "Multiplayer games" },  
+    { name: "AddictingGames", url: "https://www.addictinggames.com/", description: "Weird and fun games" },  
+    { name: "Miniclip", url: "https://miniclip.com/games/web", description: "Sports and mini games" },  
+    { name: "Kiwigames", url: "https://www.kiwigames.io/", description: "Hyper casual mobile games" },  
+    { name: "Kingdom Of Loathing", url: "https://www.kingdomofloathing.com/", description: "Text-based RPG" },  
+    { name: "CoolMathGames", url: "https://www.coolmathgames.com/", description: "Logic & math games" },  
+    { name: "GameSnacks", url: "https://gamesnacks.com/", description: "Super fast-loading games" },  
+    { name: "Kongregate", url: "https://www.kongregate.com/", description: "Flash & Unity games" },  
+  
+    // Movies  
+    { name: "Pluto TV", url: "https://pluto.tv/", description: "Live TV & movie streaming" },  
+    { name: "Tubi Movies", url: "https://tubitv.com/", description: "Free movies legally" },  
+    { name: "WatchSeries", url: "#", description: "Coming Soon..." }  
+  ];  
+  
+  const input = document.getElementById('searchBox');  
+  const resultBox = document.getElementById('search-results');  
+  const resultList = document.getElementById('result-list');  
+  
+  input.addEventListener('input', () => {  
+    const keyword = input.value.toLowerCase().trim();  
+    resultList.innerHTML = '';  
+  
+    if (keyword === '') {  
+      resultBox.style.display = 'none';  
+      return;  
+    }  
+  
+    const matched = sites.filter(site =>  
+      site.name.toLowerCase().includes(keyword) ||  
+      site.description.toLowerCase().includes(keyword)  
+    );  
+  
+    if (matched.length > 0) {  
+      resultBox.style.display = 'block';  
+      matched.forEach(site => {  
+        const div = document.createElement('div');  
+        div.className = 'result-item';  
+        div.innerHTML = `  
+          <a href="${site.url}" target="_blank">${site.name}</a>  
+          <p>${site.description}</p>  
+        `;  
+        resultList.appendChild(div);  
+      });  
+    } else {  
+      resultBox.style.display = 'block';  
+      resultList.innerHTML = `<p style="color:#bbb;">No results found.</p>`;  
+    }  
+  });  
+</script>  </body>  </html>  
